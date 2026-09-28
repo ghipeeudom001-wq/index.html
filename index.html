@@ -1,0 +1,3341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Construction C-O-N-E-L-E Limited | Building The Future</title>
+<meta name="description" content="Construction C-O-N-E-L-E Limited — construction, building, development and project solutions in Uyo, Akwa Ibom, Nigeria.">
+
+<style>
+:root{
+  --gold:#d8a62a;
+  --gold2:#f3cc68;
+  --black:#080909;
+  --dark:#101212;
+  --dark2:#171919;
+  --card:#1d2020;
+  --white:#f7f7f5;
+  --muted:#a9aeab;
+  --line:rgba(255,255,255,.09);
+  --success:#34d399;
+  --danger:#ef4444;
+  --shadow:0 25px 70px rgba(0,0,0,.38);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.6;
+}
+
+button,
+input,
+textarea,
+select{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+.hidden{
+  display:none!important;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  background:rgba(8,9,9,.82);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:900;
+  letter-spacing:.5px;
+}
+
+.logo{
+  width:45px;
+  height:45px;
+  border-radius:10px;
+  object-fit:cover;
+  background:#222;
+  border:1px solid rgba(216,166,42,.5);
+}
+
+.logoFallback{
+  width:45px;
+  height:45px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--gold),#8d6410);
+  color:#080909;
+  font-weight:1000;
+}
+
+.brandText{
+  font-size:14px;
+  line-height:1.15;
+}
+
+.brandText small{
+  display:block;
+  color:var(--gold2);
+  font-size:10px;
+  letter-spacing:2px;
+  margin-top:3px;
+}
+
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.navlinks a{
+  color:#d9dcda;
+  font-size:14px;
+  transition:.25s;
+}
+
+.navlinks a:hover{
+  color:var(--gold2);
+}
+
+.navBtn{
+  background:var(--gold);
+  color:#090909!important;
+  padding:11px 16px;
+  border-radius:8px;
+  font-weight:800;
+}
+
+.menuBtn{
+  display:none;
+  border:0;
+  background:transparent;
+  color:white;
+  font-size:27px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.57),rgba(0,0,0,.68)),
+    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
+
+.heroOverlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.65));
+}
+
+.heroContent{
+  position:relative;
+  z-index:2;
+  padding-top:80px;
+  max-width:760px;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid rgba(216,166,42,.35);
+  background:rgba(216,166,42,.09);
+  color:var(--gold2);
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-size:clamp(44px,7vw,84px);
+  line-height:.98;
+  margin:22px 0;
+  letter-spacing:-3px;
+}
+
+.hero h1 span{
+  color:var(--gold2);
+}
+
+.hero p{
+  color:#d4d7d5;
+  max-width:650px;
+  font-size:18px;
+}
+
+.heroActions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:0;
+  padding:14px 20px;
+  border-radius:9px;
+  font-weight:850;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btnGold{
+  background:var(--gold);
+  color:#080909;
+}
+
+.btnDark{
+  background:rgba(255,255,255,.08);
+  color:white;
+  border:1px solid rgba(255,255,255,.16);
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+  background:#0d0f0f;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.statsGrid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+  padding:28px 18px;
+  text-align:center;
+  border-right:1px solid var(--line);
+}
+
+.stat:last-child{
+  border-right:0;
+}
+
+.stat strong{
+  display:block;
+  font-size:31px;
+  color:var(--gold2);
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section{
+  padding:100px 0;
+}
+
+.sectionHead{
+  margin-bottom:42px;
+}
+
+.sectionHead .eyebrow{
+  margin-bottom:14px;
+}
+
+.sectionHead h2{
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.05;
+  letter-spacing:-1.5px;
+}
+
+.sectionHead p{
+  color:var(--muted);
+  max-width:650px;
+  margin-top:14px;
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.aboutImage{
+  min-height:520px;
+  border-radius:20px;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,#222,#111);
+  box-shadow:var(--shadow);
+}
+
+.aboutImage img{
+  width:100%;
+  height:100%;
+  min-height:520px;
+  object-fit:cover;
+}
+
+.aboutText p{
+  color:var(--muted);
+  margin:18px 0;
+}
+
+.checkList{
+  display:grid;
+  gap:13px;
+  margin-top:25px;
+}
+
+.check{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.checkIcon{
+  width:25px;
+  height:25px;
+  min-width:25px;
+  border-radius:50%;
+  background:rgba(216,166,42,.15);
+  color:var(--gold2);
+  display:grid;
+  place-items:center;
+  font-size:13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:#0e1010;
+}
+
+.serviceGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.serviceCard{
+  background:linear-gradient(145deg,#1b1e1e,#121414);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:30px;
+  transition:.3s;
+}
+
+.serviceCard:hover{
+  transform:translateY(-7px);
+  border-color:rgba(216,166,42,.4);
+}
+
+.serviceIcon{
+  width:50px;
+  height:50px;
+  border-radius:13px;
+  display:grid;
+  place-items:center;
+  background:rgba(216,166,42,.12);
+  color:var(--gold2);
+  font-size:23px;
+  margin-bottom:22px;
+}
+
+.serviceCard h3{
+  margin-bottom:9px;
+}
+
+.serviceCard p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projectGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.project{
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  background:#151717;
+}
+
+.projectImg{
+  height:230px;
+  background:#222;
+  overflow:hidden;
+}
+
+.projectImg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.5s;
+}
+
+.project:hover img{
+  transform:scale(1.06);
+}
+
+.projectInfo{
+  padding:20px;
+}
+
+.projectInfo h3{
+  margin-bottom:6px;
+}
+
+.projectInfo p{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* =========================
+   WHY US
+========================= */
+
+.why{
+  background:#0e1010;
+}
+
+.whyGrid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.whyCard{
+  padding:25px;
+  background:#171a1a;
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+
+.whyCard strong{
+  color:var(--gold2);
+  font-size:20px;
+}
+
+.whyCard p{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:7px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.ctaBox{
+  position:relative;
+  overflow:hidden;
+  border-radius:22px;
+  padding:60px;
+  background:
+    linear-gradient(100deg,rgba(216,166,42,.16),rgba(255,255,255,.04)),
+    #151818;
+  border:1px solid rgba(216,166,42,.25);
+}
+
+.ctaBox h2{
+  font-size:clamp(32px,5vw,55px);
+  line-height:1;
+  max-width:720px;
+}
+
+.ctaBox p{
+  color:var(--muted);
+  max-width:650px;
+  margin:15px 0 25px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:#0d0f0f;
+}
+
+.contactGrid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:30px;
+}
+
+.contactCards{
+  display:grid;
+  gap:14px;
+}
+
+.contactCard{
+  border:1px solid var(--line);
+  background:#151818;
+  border-radius:14px;
+  padding:22px;
+}
+
+.contactCard span{
+  color:var(--muted);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.contactCard strong{
+  display:block;
+  margin-top:5px;
+}
+
+.form{
+  background:#151818;
+  border:1px solid var(--line);
+  padding:25px;
+  border-radius:16px;
+}
+
+.formGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+}
+
+.field{
+  display:grid;
+  gap:7px;
+  margin-bottom:13px;
+}
+
+.field label{
+  color:#c7ccca;
+  font-size:12px;
+}
+
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  background:#0d0f0f;
+  color:white;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:13px;
+  outline:none;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color:rgba(216,166,42,.65);
+}
+
+.field textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#080909;
+  border-top:1px solid var(--line);
+  padding:35px 0;
+}
+
+.footerGrid{
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.footerText{
+  color:var(--muted);
+  font-size:13px;
+  max-width:480px;
+}
+
+.footerLinks{
+  display:flex;
+  gap:18px;
+  color:#ccc;
+  font-size:13px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25d366;
+  color:white;
+  display:grid;
+  place-items:center;
+  font-size:27px;
+  z-index:900;
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+
+/* =========================
+   CHATBOT
+========================= */
+
+.chatButton{
+  position:fixed;
+  right:20px;
+  bottom:90px;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  border:0;
+  background:var(--gold);
+  color:#111;
+  font-size:22px;
+  z-index:900;
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+
+.chatBox{
+  position:fixed;
+  right:20px;
+  bottom:155px;
+  width:min(370px,calc(100% - 30px));
+  height:500px;
+  background:#151818;
+  border:1px solid var(--line);
+  border-radius:17px;
+  z-index:899;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:none;
+  flex-direction:column;
+}
+
+.chatBox.open{
+  display:flex;
+}
+
+.chatHead{
+  padding:16px;
+  background:#0e1010;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.chatHead strong{
+  color:var(--gold2);
+}
+
+.chatClose{
+  border:0;
+  background:none;
+  color:#aaa;
+  font-size:20px;
+}
+
+.chatMessages{
+  flex:1;
+  overflow:auto;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.msg{
+  max-width:85%;
+  padding:10px 12px;
+  border-radius:12px;
+  font-size:13px;
+}
+
+.bot{
+  background:#222626;
+  align-self:flex-start;
+  color:#ddd;
+}
+
+.user{
+  background:var(--gold);
+  color:#111;
+  align-self:flex-end;
+}
+
+.chatInput{
+  display:flex;
+  border-top:1px solid var(--line);
+}
+
+.chatInput input{
+  flex:1;
+  background:#0e1010;
+  color:white;
+  border:0;
+  outline:0;
+  padding:14px;
+}
+
+.chatInput button{
+  border:0;
+  background:var(--gold);
+  color:#111;
+  padding:0 18px;
+  font-weight:900;
+}
+
+/* =========================
+   ADMIN
+========================= */
+
+.adminPage{
+  min-height:100vh;
+  background:#080909;
+  padding-top:90px;
+  display:none;
+}
+
+.adminPage.active{
+  display:block;
+}
+
+.adminWrap{
+  width:min(1250px,94%);
+  margin:auto;
+  padding:30px 0 80px;
+}
+
+.adminTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.adminTop h1{
+  font-size:28px;
+}
+
+.adminTop span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.adminGrid{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:20px;
+}
+
+.adminNav{
+  background:#121414;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:12px;
+  height:max-content;
+  position:sticky;
+  top:95px;
+}
+
+.adminNav button{
+  width:100%;
+  border:0;
+  background:transparent;
+  color:#aaa;
+  text-align:left;
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:3px;
+}
+
+.adminNav button:hover,
+.adminNav button.active{
+  background:rgba(216,166,42,.13);
+  color:var(--gold2);
+}
+
+.adminPanel{
+  display:none;
+}
+
+.adminPanel.active{
+  display:block;
+}
+
+.dashboardCards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.dashCard{
+  padding:20px;
+  border-radius:13px;
+  background:#151818;
+  border:1px solid var(--line);
+}
+
+.dashCard span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.dashCard strong{
+  display:block;
+  font-size:30px;
+  color:var(--gold2);
+}
+
+.adminCard{
+  background:#121414;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+  margin-bottom:16px;
+}
+
+.adminCard h2{
+  margin-bottom:16px;
+  font-size:20px;
+}
+
+.adminActions{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.adminTable{
+  width:100%;
+  border-collapse:collapse;
+  min-width:700px;
+}
+
+.tableWrap{
+  overflow:auto;
+}
+
+.adminTable th,
+.adminTable td{
+  padding:11px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+  font-size:12px;
+}
+
+.adminTable th{
+  color:var(--gold2);
+}
+
+.thumb{
+  width:70px;
+  height:48px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.mediaGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.mediaItem{
+  background:#171919;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.mediaItem img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.mediaInfo{
+  padding:13px;
+}
+
+.mediaInfo h4{
+  margin-bottom:5px;
+}
+
+.mediaInfo p{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.loginScreen{
+  min-height:100vh;
+  background:#080909;
+  display:grid;
+  place-items:center;
+  padding:20px;
+}
+
+.loginBox{
+  width:min(430px,100%);
+  background:#151818;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+
+.loginBox h1{
+  margin-bottom:5px;
+}
+
+.loginBox p{
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+.notice{
+  padding:12px;
+  border-radius:8px;
+  background:rgba(216,166,42,.09);
+  border:1px solid rgba(216,166,42,.2);
+  color:#ddd;
+  font-size:12px;
+  margin-bottom:15px;
+}
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:25px;
+  transform:translateX(-50%) translateY(20px);
+  opacity:0;
+  pointer-events:none;
+  background:#1e2422;
+  color:white;
+  border:1px solid var(--line);
+  padding:12px 18px;
+  border-radius:9px;
+  z-index:5000;
+  transition:.3s;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+  .navlinks{
+    position:absolute;
+    left:0;
+    right:0;
+    top:76px;
+    background:#0c0e0e;
+    border-bottom:1px solid var(--line);
+    padding:15px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .navlinks.open{
+    display:flex;
+  }
+
+  .menuBtn{
+    display:block;
+  }
+
+  .statsGrid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat{
+    border-bottom:1px solid var(--line);
+  }
+
+  .grid2,
+  .contactGrid{
+    grid-template-columns:1fr;
+  }
+
+  .serviceGrid,
+  .projectGrid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .adminGrid{
+    grid-template-columns:1fr;
+  }
+
+  .adminNav{
+    position:static;
+    display:flex;
+    overflow:auto;
+    gap:4px;
+  }
+
+  .adminNav button{
+    min-width:max-content;
+  }
+
+  .dashboardCards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .mediaGrid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:560px){
+
+  section{
+    padding:70px 0;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .serviceGrid,
+  .projectGrid,
+  .whyGrid,
+  .mediaGrid{
+    grid-template-columns:1fr;
+  }
+
+  .formGrid{
+    grid-template-columns:1fr;
+  }
+
+  .ctaBox{
+    padding:30px 22px;
+  }
+
+  .dashboardCards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .chatBox{
+    right:10px;
+    bottom:145px;
+  }
+
+  .whatsapp,
+  .chatButton{
+    right:13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+ IMPORTANT: GOOGLE APPS SCRIPT WEB APP URL
+ Replace ONLY the value below with your deployed /exec URL.
+ DO NOT put your Google Sheet URL here.
+========================================================= -->
+
+<script>
+const GOOGLE_SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbx6mzRnUKmT7ISwseIDVrQDKqmxlVQB3q2MqKJ4qDtw2rLKubvU3iSWcbpTSb4HjWji/exec";
+
+const BUSINESS_NAME =
+"CONSTRUCTION C-O-N-E-L-E LIMITED";
+
+const BUSINESS_PHONE =
+"0803 347 5529";
+
+const WHATSAPP_URL =
+"https://wa.me/2348033475529";
+
+const DEMO_ADMIN_PASSWORD =
+"Construction C-O-N-E-L-E 1 2 3";
+</script>
+
+<!-- =========================
+ MAIN WEBSITE
+========================= -->
+
+<div id="mainSite">
+
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="brand">
+      <div id="logoArea">
+        <div class="logoFallback">C</div>
+      </div>
+
+      <div class="brandText">
+        CONSTRUCTION C-O-N-E-L-E
+        <small>LIMITED</small>
+      </div>
+    </a>
+
+    <button class="menuBtn" onclick="toggleMenu()">☰</button>
+
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#admin" class="navBtn">Owner Login</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="heroOverlay"></div>
+
+  <div class="container">
+    <div class="heroContent">
+
+      <span class="eyebrow">Construction • Development • Excellence</span>
+
+      <h1>
+        We Build
+        <span>What Matters.</span>
+      </h1>
+
+      <p id="heroText">
+        Construction C-O-N-E-L-E Limited delivers dependable construction,
+        building and development solutions designed around quality,
+        durability and professional execution.
+      </p>
+
+      <div class="heroActions">
+        <a href="#contact" class="btn btnGold">
+          Start A Project
+        </a>
+
+        <a href="#projects" class="btn btnDark">
+          View Our Work
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container statsGrid">
+
+    <div class="stat">
+      <strong>01</strong>
+      <span>Professional Approach</span>
+    </div>
+
+    <div class="stat">
+      <strong>24/7</strong>
+      <span>Client Communication</span>
+    </div>
+
+    <div class="stat">
+      <strong>100%</strong>
+      <span>Project Focus</span>
+    </div>
+
+    <div class="stat">
+      <strong>UYO</strong>
+      <span>Akwa Ibom, Nigeria</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="container grid2">
+
+    <div class="aboutImage">
+      <img
+        id="aboutImage"
+        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85"
+        alt="Construction project">
+    </div>
+
+    <div class="aboutText">
+
+      <div class="sectionHead">
+        <span class="eyebrow">About Us</span>
+
+        <h2>
+          Building With
+          Purpose.
+        </h2>
+      </div>
+
+      <p id="aboutText">
+        Construction C-O-N-E-L-E Limited is focused on delivering
+        construction and development projects with attention to quality,
+        practical planning and long-term value.
+      </p>
+
+      <div class="checkList">
+
+        <div class="check">
+          <div class="checkIcon">✓</div>
+          <div>
+            <strong>Quality-focused execution</strong>
+            <p style="color:var(--muted);font-size:13px;">
+              Attention to the details that matter throughout a project.
+            </p>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="checkIcon">✓</div>
+          <div>
+            <strong>Professional communication</strong>
+            <p style="color:var(--muted);font-size:13px;">
+              Clear communication from project discussion to completion.
+            </p>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="checkIcon">✓</div>
+          <div>
+            <strong>Project-oriented solutions</strong>
+            <p style="color:var(--muted);font-size:13px;">
+              Solutions shaped around each client's construction needs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="sectionHead">
+      <span class="eyebrow">What We Do</span>
+      <h2>Construction Solutions.</h2>
+      <p>
+        From project planning to execution, we provide practical
+        construction and development services.
+      </p>
+    </div>
+
+    <div class="serviceGrid">
+
+      <div class="serviceCard">
+        <div class="serviceIcon">🏗</div>
+        <h3>Building Construction</h3>
+        <p>
+          Professional construction solutions for residential,
+          commercial and other building projects.
+        </p>
+      </div>
+
+      <div class="serviceCard">
+        <div class="serviceIcon">🏢</div>
+        <h3>Property Development</h3>
+        <p>
+          Development-focused solutions designed around useful,
+          durable and practical spaces.
+        </p>
+      </div>
+
+      <div class="serviceCard">
+        <div class="serviceIcon">📐</div>
+        <h3>Project Planning</h3>
+        <p>
+          Structured planning and coordination to help projects
+          move from concept toward execution.
+        </p>
+      </div>
+
+      <div class="serviceCard">
+        <div class="serviceIcon">🧱</div>
+        <h3>Renovation</h3>
+        <p>
+          Construction and improvement solutions for existing
+          buildings and properties.
+        </p>
+      </div>
+
+      <div class="serviceCard">
+        <div class="serviceIcon">🏠</div>
+        <h3>Residential Projects</h3>
+        <p>
+          Building solutions for homes and residential property
+          projects.
+        </p>
+      </div>
+
+      <div class="serviceCard">
+        <div class="serviceIcon">🏬</div>
+        <h3>Commercial Projects</h3>
+        <p>
+          Construction support for commercial spaces and
+          business-focused developments.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <div class="container">
+
+    <div class="sectionHead">
+      <span class="eyebrow">Our Work</span>
+      <h2>Featured Projects.</h2>
+      <p>
+        Project images and descriptions can be updated directly
+        from the owner dashboard.
+      </p>
+    </div>
+
+    <div class="projectGrid" id="projectGrid">
+
+      <div class="project">
+        <div class="projectImg">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85">
+        </div>
+        <div class="projectInfo">
+          <h3>Featured Construction</h3>
+          <p>Project information can be updated from Admin.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="projectImg">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85">
+        </div>
+        <div class="projectInfo">
+          <h3>Modern Development</h3>
+          <p>Project information can be updated from Admin.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="projectImg">
+          <img src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=1000&q=85">
+        </div>
+        <div class="projectInfo">
+          <h3>Building Project</h3>
+          <p>Project information can be updated from Admin.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="sectionHead">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Built Around The Client.</h2>
+    </div>
+
+    <div class="whyGrid">
+
+      <div class="whyCard">
+        <strong>01 — Quality</strong>
+        <p>
+          We focus on quality throughout project planning and execution.
+        </p>
+      </div>
+
+      <div class="whyCard">
+        <strong>02 — Communication</strong>
+        <p>
+          Clients can reach the company directly through WhatsApp,
+          phone and the website.
+        </p>
+      </div>
+
+      <div class="whyCard">
+        <strong>03 — Transparency</strong>
+        <p>
+          Project enquiries and client information can be organised
+          through the website's lead system.
+        </p>
+      </div>
+
+      <div class="whyCard">
+        <strong>04 — Long-Term Value</strong>
+        <p>
+          We approach construction with durability and practical
+          project value in mind.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="ctaBox">
+
+      <span class="eyebrow">Have A Project?</span>
+
+      <h2>
+        Let's Discuss Your Next Build.
+      </h2>
+
+      <p>
+        Tell us what you're planning and our team can begin the
+        conversation with you.
+      </p>
+
+      <a class="btn btnGold" href="#contact">
+        Request A Consultation
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="sectionHead">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's Talk.</h2>
+      <p>
+        Send an enquiry and the company can follow up with you.
+      </p>
+    </div>
+
+    <div class="contactGrid">
+
+      <div class="contactCards">
+
+        <div class="contactCard">
+          <span>Phone / WhatsApp</span>
+          <strong>0803 347 5529</strong>
+        </div>
+
+        <div class="contactCard">
+          <span>Location</span>
+          <strong>Uyo, Akwa Ibom, Nigeria</strong>
+        </div>
+
+        <div class="contactCard">
+          <span>Business</span>
+          <strong>Construction C-O-N-E-L-E Limited</strong>
+        </div>
+
+        <a
+          class="btn btnGold"
+          href="https://wa.me/2348033475529"
+          target="_blank">
+          Chat On WhatsApp
+        </a>
+
+      </div>
+
+      <form class="form" id="leadForm">
+
+        <div class="formGrid">
+
+          <div class="field">
+            <label>Full Name</label>
+            <input id="leadName" required placeholder="Your name">
+          </div>
+
+          <div class="field">
+            <label>Phone Number</label>
+            <input id="leadPhone" required placeholder="080...">
+          </div>
+
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input id="leadEmail" type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="field">
+          <label>Project Type</label>
+
+          <select id="leadType">
+            <option>Building Construction</option>
+            <option>Property Development</option>
+            <option>Renovation</option>
+            <option>Residential Project</option>
+            <option>Commercial Project</option>
+            <option>Other</option>
+          </select>
+
+        </div>
+
+        <div class="field">
+          <label>Tell Us About Your Project</label>
+
+          <textarea
+            id="leadMessage"
+            required
+            placeholder="Describe what you need..."></textarea>
+
+        </div>
+
+        <button class="btn btnGold" type="submit">
+          Send Project Enquiry
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+
+  <div class="container footerGrid">
+
+    <div>
+      <div class="brand">
+        <div id="footerLogo">
+          <div class="logoFallback">C</div>
+        </div>
+
+        <div class="brandText">
+          CONSTRUCTION C-O-N-E-L-E
+          <small>LIMITED</small>
+        </div>
+      </div>
+
+      <p class="footerText" style="margin-top:12px;">
+        Professional construction and development solutions.
+      </p>
+    </div>
+
+    <div class="footerLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#admin">Admin</a>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-top:25px;color:#666;font-size:11px;">
+    © <span id="year"></span> Construction C-O-N-E-L-E Limited. All rights reserved.
+  </div>
+
+</footer>
+
+<a
+  class="whatsapp"
+  href="https://wa.me/2348033475529"
+  target="_blank"
+  aria-label="WhatsApp">
+  ☎
+</a>
+
+<button class="chatButton" onclick="toggleChat()">💬</button>
+
+<div class="chatBox" id="chatBox">
+
+  <div class="chatHead">
+    <strong>C-O-N-E-L-E Assistant</strong>
+    <button class="chatClose" onclick="toggleChat()">×</button>
+  </div>
+
+  <div class="chatMessages" id="chatMessages">
+    <div class="msg bot">
+      Hello! Welcome to Construction C-O-N-E-L-E Limited.
+      How can we help with your construction or development project?
+    </div>
+  </div>
+
+  <div class="chatInput">
+    <input
+      id="chatInput"
+      placeholder="Type your question..."
+      onkeydown="if(event.key==='Enter')sendChat()">
+
+    <button onclick="sendChat()">Send</button>
+  </div>
+
+</div>
+
+</div>
+
+<!-- =========================
+ ADMIN LOGIN
+========================= -->
+
+<div id="adminLogin" class="loginScreen hidden">
+
+  <div class="loginBox">
+
+    <h1>Owner Admin</h1>
+
+    <p>
+      Construction C-O-N-E-L-E Limited website management.
+    </p>
+
+    <div class="notice">
+      Enter the owner password to access the dashboard.
+    </div>
+
+    <div class="field">
+      <label>Password</label>
+
+      <input
+        type="password"
+        id="adminPassword"
+        placeholder="Enter password"
+        onkeydown="if(event.key==='Enter')adminLogin()">
+    </div>
+
+    <button class="btn btnGold" style="width:100%;" onclick="adminLogin()">
+      Login
+    </button>
+
+    <button
+      class="btn btnDark"
+      style="width:100%;margin-top:10px;"
+      onclick="exitAdmin()">
+      Return To Website
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
+ ADMIN DASHBOARD
+========================= -->
+
+<div id="adminPage" class="adminPage">
+
+  <div class="adminWrap">
+
+    <div class="adminTop">
+
+      <div>
+        <h1>Website Dashboard</h1>
+        <span>Construction C-O-N-E-L-E Limited</span>
+      </div>
+
+      <button class="btn btnDark" onclick="exitAdmin()">
+        View Website
+      </button>
+
+    </div>
+
+    <div class="adminGrid">
+
+      <aside class="adminNav">
+
+        <button class="active" onclick="adminTab('overview',this)">
+          Overview
+        </button>
+
+        <button onclick="adminTab('media',this)">
+          Images & Logo
+        </button>
+
+        <button onclick="adminTab('projectsAdmin',this)">
+          Projects
+        </button>
+
+        <button onclick="adminTab('leads',this)">
+          Leads
+        </button>
+
+        <button onclick="adminTab('chatsAdmin',this)">
+          Chat Conversations
+        </button>
+
+        <button onclick="adminTab('content',this)">
+          Website Content
+        </button>
+
+      </aside>
+
+      <main>
+
+        <!-- OVERVIEW -->
+
+        <section class="adminPanel active" id="panel-overview">
+
+          <div class="dashboardCards">
+
+            <div class="dashCard">
+              <span>Visitors</span>
+              <strong id="statVisits">0</strong>
+            </div>
+
+            <div class="dashCard">
+              <span>Leads</span>
+              <strong id="statLeads">0</strong>
+            </div>
+
+            <div class="dashCard">
+              <span>Chats</span>
+              <strong id="statChats">0</strong>
+            </div>
+
+            <div class="dashCard">
+              <span>Images</span>
+              <strong id="statImages">0</strong>
+            </div>
+
+          </div>
+
+          <div class="adminCard" style="margin-top:16px;">
+            <h2>Website Status</h2>
+
+            <p style="color:var(--muted);font-size:13px;">
+              Your website can be managed from this dashboard.
+              Images uploaded here are sent to Google Drive through
+              the connected Apps Script backend.
+            </p>
+
+            <div class="adminActions">
+
+              <button class="btn btnGold" onclick="adminTabByName('media')">
+                Manage Images
+              </button>
+
+              <button class="btn btnDark" onclick="adminTabByName('leads')">
+                View Leads
+              </button>
+
+              <button class="btn btnDark" onclick="adminTabByName('projectsAdmin')">
+                Manage Projects
+              </button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- MEDIA -->
+
+        <section class="adminPanel" id="panel-media">
+
+          <div class="adminCard">
+
+            <h2>Logo</h2>
+
+            <p style="color:var(--muted);font-size:12px;margin-bottom:15px;">
+              Upload or replace the company logo.
+            </p>
+
+            <input
+              type="file"
+              id="logoUpload"
+              accept="image/*">
+
+            <button
+              class="btn btnGold"
+              style="margin-top:12px;"
+              onclick="uploadLogo()">
+              Upload / Replace Logo
+            </button>
+
+          </div>
+
+          <div class="adminCard">
+
+            <h2>Hero Image</h2>
+
+            <p style="color:var(--muted);font-size:12px;">
+              Replace the large image shown at the top of the website.
+            </p>
+
+            <input
+              type="file"
+              id="heroUpload"
+              accept="image/*"
+              style="margin-top:15px;">
+
+            <button
+              class="btn btnGold"
+              style="margin-top:12px;"
+              onclick="uploadSpecialImage('hero')">
+              Replace Hero Image
+            </button>
+
+          </div>
+
+          <div class="adminCard">
+
+            <h2>About Image</h2>
+
+            <p style="color:var(--muted);font-size:12px;">
+              Replace the image used in the About section.
+            </p>
+
+            <input
+              type="file"
+              id="aboutUpload"
+              accept="image/*"
+              style="margin-top:15px;">
+
+            <button
+              class="btn btnGold"
+              style="margin-top:12px;"
+              onclick="uploadSpecialImage('about')">
+              Replace About Image
+            </button>
+
+          </div>
+
+          <div class="adminCard">
+
+            <h2>Add Website Images</h2>
+
+            <p style="color:var(--muted);font-size:12px;margin-bottom:15px;">
+              Select multiple images from your phone at once.
+              You can add as many images as you want.
+            </p>
+
+            <input
+              type="file"
+              id="mediaUpload"
+              accept="image/*"
+              multiple>
+
+            <div class="field" style="margin-top:15px;">
+              <label>Image Title</label>
+              <input id="mediaTitle" placeholder="Example: New Building Project">
+            </div>
+
+            <div class="field">
+              <label>Description</label>
+              <textarea
+                id="mediaDescription"
+                placeholder="Write information about these images..."></textarea>
+            </div>
+
+            <button
+              class="btn btnGold"
+              onclick="uploadMultipleMedia()">
+              Upload Images
+            </button>
+
+          </div>
+
+          <div class="adminCard">
+
+            <h2>Website Media</h2>
+
+            <div class="mediaGrid" id="mediaGrid">
+              <p style="color:var(--muted);">
+                Loading images...
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="adminPanel" id="panel-projectsAdmin">
+
+          <div class="adminCard">
+
+            <h2>Add Project</h2>
+
+            <div class="field">
+              <label>Project Name</label>
+              <input id="projectName" placeholder="Project name">
+            </div>
+
+            <div class="field">
+              <label>Description</label>
+              <textarea
+                id="projectDescription"
+                placeholder="Project description"></textarea>
+            </div>
+
+            <div class="field">
+              <label>Project Image</label>
+              <input
+                type="file"
+                id="projectImage"
+                accept="image/*">
+            </div>
+
+            <button class="btn btnGold" onclick="addProject()">
+              Add Project
+            </button>
+
+          </div>
+
+          <div class="adminCard">
+
+            <h2>Current Projects</h2>
+
+            <div class="tableWrap">
+
+              <table class="adminTable">
+
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody id="adminProjectsTable"></tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- LEADS -->
+
+        <section class="adminPanel" id="panel-leads">
+
+          <div class="adminCard">
+
+            <h2>Customer Leads</h2>
+
+            <div class="tableWrap">
+
+              <table class="adminTable">
+
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Project</th>
+                    <th>Message</th>
+                  </tr>
+                </thead>
+
+                <tbody id="leadsTable"></tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- CHATS -->
+
+        <section class="adminPanel" id="panel-chatsAdmin">
+
+          <div class="adminCard">
+
+            <h2>Chatbot Conversations</h2>
+
+            <p style="color:var(--muted);font-size:12px;margin-bottom:15px;">
+              Conversations recorded by the website chatbot.
+            </p>
+
+            <div class="tableWrap">
+
+              <table class="adminTable">
+
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Visitor</th>
+                    <th>Message</th>
+                    <th>Bot Response</th>
+                  </tr>
+                </thead>
+
+                <tbody id="chatsTable"></tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- CONTENT -->
+
+        <section class="adminPanel" id="panel-content">
+
+          <div class="adminCard">
+
+            <h2>Edit Website Content</h2>
+
+            <div class="field">
+              <label>Hero Text</label>
+              <textarea id="editHero"></textarea>
+            </div>
+
+            <div class="field">
+              <label>About Text</label>
+              <textarea id="editAbout"></textarea>
+            </div>
+
+            <button class="btn btnGold" onclick="saveWebsiteContent()">
+              Save Website Content
+            </button>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+
+/* =========================================================
+ GLOBAL DATA
+========================================================= */
+
+let websiteData = {};
+let mediaData = [];
+let projectsData = [];
+let adminData = {};
+let chatSession = "visitor-" + Date.now();
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* =========================================================
+ HELPERS
+========================================================= */
+
+function toast(message){
+
+  const t = document.getElementById("toast");
+
+  t.textContent = message;
+  t.classList.add("show");
+
+  setTimeout(()=>{
+    t.classList.remove("show");
+  },3000);
+}
+
+function escapeHtml(value){
+
+  return String(value ?? "")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+function toggleMenu(){
+
+  document.getElementById("navLinks")
+    .classList.toggle("open");
+}
+
+function toggleChat(){
+
+  document.getElementById("chatBox")
+    .classList.toggle("open");
+}
+
+
+/* =========================================================
+ API
+========================================================= */
+
+async function apiGet(action){
+
+  if(
+    !GOOGLE_SCRIPT_URL ||
+    GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")
+  ){
+    return {
+      success:false,
+      error:"Google Apps Script URL has not been connected."
+    };
+  }
+
+  try{
+
+    const response =
+      await fetch(
+        GOOGLE_SCRIPT_URL +
+        "?action=" +
+        encodeURIComponent(action)
+      );
+
+    return await response.json();
+
+  }catch(error){
+
+    console.error(error);
+
+    return {
+      success:false,
+      error:error.message
+    };
+  }
+}
+
+
+async function apiPost(payload){
+
+  if(
+    !GOOGLE_SCRIPT_URL ||
+    GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")
+  ){
+
+    return {
+      success:false,
+      error:"Google Apps Script URL has not been connected."
+    };
+  }
+
+  try{
+
+    const response =
+      await fetch(
+        GOOGLE_SCRIPT_URL,
+        {
+          method:"POST",
+          headers:{
+            "Content-Type":"text/plain;charset=utf-8"
+          },
+          body:JSON.stringify(payload)
+        }
+      );
+
+    return await response.json();
+
+  }catch(error){
+
+    console.error(error);
+
+    return {
+      success:false,
+      error:error.message
+    };
+  }
+}
+
+
+/* =========================================================
+ WEBSITE LOADING
+========================================================= */
+
+async function loadWebsite(){
+
+  const result =
+    await apiGet("getWebsite");
+
+  if(!result.success) return;
+
+  websiteData =
+    result.data || {};
+
+  if(websiteData.heroText){
+    document.getElementById("heroText").textContent =
+      websiteData.heroText;
+  }
+
+  if(websiteData.aboutText){
+    document.getElementById("aboutText").textContent =
+      websiteData.aboutText;
+  }
+
+  if(websiteData.heroImage){
+    document.querySelector(".hero").style.background =
+      "linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.57),rgba(0,0,0,.68)),url('" +
+      websiteData.heroImage +
+      "') center/cover";
+  }
+
+  if(websiteData.aboutImage){
+    document.getElementById("aboutImage").src =
+      websiteData.aboutImage;
+  }
+
+  if(websiteData.logo){
+    renderLogo(websiteData.logo);
+  }
+
+  document.getElementById("editHero").value =
+    websiteData.heroText || "";
+
+  document.getElementById("editAbout").value =
+    websiteData.aboutText || "";
+}
+
+
+/* =========================================================
+ MEDIA
+========================================================= */
+
+async function loadMedia(){
+
+  const result =
+    await apiGet("getMedia");
+
+  if(!result.success) return;
+
+  mediaData =
+    result.data || [];
+
+  renderMedia();
+}
+
+
+function renderMedia(){
+
+  const grid =
+    document.getElementById("mediaGrid");
+
+  if(!mediaData.length){
+
+    grid.innerHTML =
+      "<p style='color:var(--muted);'>No uploaded images yet.</p>";
+
+    return;
+  }
+
+  grid.innerHTML =
+    mediaData.map(item=>`
+
+      <div class="mediaItem">
+
+        <img
+          src="${escapeHtml(item.url)}"
+          alt="${escapeHtml(item.title)}">
+
+        <div class="mediaInfo">
+
+          <h4>
+            ${escapeHtml(item.title || "Untitled")}
+          </h4>
+
+          <p>
+            ${escapeHtml(item.description || "")}
+          </p>
+
+          <button
+            class="btn btnDark"
+            style="margin-top:10px;"
+            onclick="deleteMedia('${escapeHtml(item.id)}')">
+            Delete
+          </button>
+
+        </div>
+
+      </div>
+
+    `).join("");
+}
+
+
+/* =========================================================
+ LOGO
+========================================================= */
+
+function renderLogo(url){
+
+  const html =
+    `<img class="logo" src="${escapeHtml(url)}" alt="Logo">`;
+
+  document.getElementById("logoArea").innerHTML = html;
+
+  document.getElementById("footerLogo").innerHTML =
+    html;
+}
+
+
+async function uploadLogo(){
+
+  const file =
+    document.getElementById("logoUpload").files[0];
+
+  if(!file){
+
+    toast("Choose a logo image first.");
+    return;
+  }
+
+  toast("Uploading logo...");
+
+  const base64 =
+    await fileToBase64(file);
+
+  const result =
+    await apiPost({
+      action:"uploadImage",
+      type:"logo",
+      title:"Company Logo",
+      description:"Official company logo",
+      fileName:file.name,
+      mimeType:file.type,
+      data:base64
+    });
+
+  if(result.success){
+
+    toast("Logo uploaded successfully.");
+
+    renderLogo(result.url);
+
+    await loadWebsite();
+    await loadMedia();
+
+  }else{
+
+    toast(result.error || "Logo upload failed.");
+  }
+}
+
+
+/* =========================================================
+ HERO / ABOUT IMAGE
+========================================================= */
+
+async function uploadSpecialImage(type){
+
+  const input =
+    document.getElementById(
+      type === "hero"
+      ? "heroUpload"
+      : "aboutUpload"
+    );
+
+  const file =
+    input.files[0];
+
+  if(!file){
+
+    toast("Choose an image first.");
+    return;
+  }
+
+  toast("Uploading image...");
+
+  const base64 =
+    await fileToBase64(file);
+
+  const result =
+    await apiPost({
+      action:"uploadImage",
+      type:type,
+      title:type === "hero"
+        ? "Hero Image"
+        : "About Image",
+      description:"",
+      fileName:file.name,
+      mimeType:file.type,
+      data:base64
+    });
+
+  if(result.success){
+
+    toast("Image replaced.");
+
+    await loadWebsite();
+    await loadMedia();
+
+  }else{
+
+    toast(result.error || "Upload failed.");
+  }
+}
+
+
+/* =========================================================
+ MULTIPLE MEDIA UPLOAD
+========================================================= */
+
+async function uploadMultipleMedia(){
+
+  const files =
+    [...document.getElementById("mediaUpload").files];
+
+  if(!files.length){
+
+    toast("Select one or more images.");
+    return;
+  }
+
+  const title =
+    document.getElementById("mediaTitle").value ||
+    "Construction C-O-N-E-L-E Project";
+
+  const description =
+    document.getElementById("mediaDescription").value || "";
+
+  for(let i=0;i<files.length;i++){
+
+    toast(
+      "Uploading image " +
+      (i+1) +
+      " of " +
+      files.length +
+      "..."
+    );
+
+    const file = files[i];
+
+    const base64 =
+      await fileToBase64(file);
+
+    await apiPost({
+      action:"uploadImage",
+      type:"media",
+      title:title,
+      description:description,
+      fileName:file.name,
+      mimeType:file.type,
+      data:base64
+    });
+  }
+
+  document.getElementById("mediaUpload").value = "";
+
+  toast("All selected images uploaded.");
+
+  await loadMedia();
+}
+
+
+async function deleteMedia(id){
+
+  if(!confirm("Delete this image?")) return;
+
+  const result =
+    await apiPost({
+      action:"deleteImage",
+      id:id
+    });
+
+  if(result.success){
+
+    toast("Image deleted.");
+    await loadMedia();
+
+  }else{
+
+    toast(result.error || "Delete failed.");
+  }
+}
+
+
+/* =========================================================
+ FILE READER
+========================================================= */
+
+function fileToBase64(file){
+
+  return new Promise((resolve,reject)=>{
+
+    const reader =
+      new FileReader();
+
+    reader.onload = () =>
+      resolve(
+        String(reader.result).split(",")[1]
+      );
+
+    reader.onerror =
+      reject;
+
+    reader.readAsDataURL(file);
+  });
+}
+
+
+/* =========================================================
+ PROJECTS
+========================================================= */
+
+async function loadProjects(){
+
+  const result =
+    await apiGet("getProjects");
+
+  if(!result.success) return;
+
+  projectsData =
+    result.data || [];
+
+  renderProjects();
+  renderAdminProjects();
+}
+
+
+function renderProjects(){
+
+  const grid =
+    document.getElementById("projectGrid");
+
+  if(!projectsData.length) return;
+
+  grid.innerHTML =
+    projectsData.map(project=>`
+
+      <div class="project">
+
+        <div class="projectImg">
+
+          <img
+            src="${escapeHtml(project.image || "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85")}"
+            alt="${escapeHtml(project.name)}">
+
+        </div>
+
+        <div class="projectInfo">
+
+          <h3>
+            ${escapeHtml(project.name)}
+          </h3>
+
+          <p>
+            ${escapeHtml(project.description)}
+          </p>
+
+        </div>
+
+      </div>
+
+    `).join("");
+}
+
+
+function renderAdminProjects(){
+
+  const tbody =
+    document.getElementById("adminProjectsTable");
+
+  if(!projectsData.length){
+
+    tbody.innerHTML =
+      `<tr><td colspan="4">No projects yet.</td></tr>`;
+
+    return;
+  }
+
+  tbody.innerHTML =
+    projectsData.map(project=>`
+
+      <tr>
+
+        <td>
+          <img
+            class="thumb"
+            src="${escapeHtml(project.image || "")}">
+        </td>
+
+        <td>
+          ${escapeHtml(project.name)}
+        </td>
+
+        <td>
+          ${escapeHtml(project.description)}
+        </td>
+
+        <td>
+
+          <button
+            class="btn btnDark"
+            onclick="deleteProject('${escapeHtml(project.id)}')">
+            Delete
+          </button>
+
+        </td>
+
+      </tr>
+
+    `).join("");
+}
+
+
+async function addProject(){
+
+  const name =
+    document.getElementById("projectName").value.trim();
+
+  const description =
+    document.getElementById("projectDescription").value.trim();
+
+  const file =
+    document.getElementById("projectImage").files[0];
+
+  if(!name){
+
+    toast("Enter a project name.");
+    return;
+  }
+
+  if(!file){
+
+    toast("Choose a project image.");
+    return;
+  }
+
+  toast("Uploading project image...");
+
+  const base64 =
+    await fileToBase64(file);
+
+  const imageResult =
+    await apiPost({
+      action:"uploadImage",
+      type:"project",
+      title:name,
+      description:description,
+      fileName:file.name,
+      mimeType:file.type,
+      data:base64
+    });
+
+  if(!imageResult.success){
+
+    toast(imageResult.error || "Image upload failed.");
+    return;
+  }
+
+  const result =
+    await apiPost({
+      action:"saveProject",
+      name:name,
+      description:description,
+      image:imageResult.url,
+      imageId:imageResult.id
+    });
+
+  if(result.success){
+
+    toast("Project added.");
+
+    document.getElementById("projectName").value="";
+    document.getElementById("projectDescription").value="";
+    document.getElementById("projectImage").value="";
+
+    await loadProjects();
+
+  }else{
+
+    toast(result.error || "Project could not be saved.");
+  }
+}
+
+
+async function deleteProject(id){
+
+  if(!confirm("Delete this project?")) return;
+
+  const result =
+    await apiPost({
+      action:"deleteProject",
+      id:id
+    });
+
+  if(result.success){
+
+    toast("Project deleted.");
+    await loadProjects();
+
+  }else{
+
+    toast(result.error || "Delete failed.");
+  }
+}
+
+
+/* =========================================================
+ LEAD FORM
+========================================================= */
+
+document
+.getElementById("leadForm")
+.addEventListener("submit",async function(e){
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById("leadName").value.trim();
+
+  const phone =
+    document.getElementById("leadPhone").value.trim();
+
+  const email =
+    document.getElementById("leadEmail").value.trim();
+
+  const type =
+    document.getElementById("leadType").value;
+
+  const message =
+    document.getElementById("leadMessage").value.trim();
+
+  const result =
+    await apiPost({
+      action:"saveLead",
+      name:name,
+      phone:phone,
+      email:email,
+      project:type,
+      message:message
+    });
+
+  if(result.success){
+
+    toast("Your enquiry has been received.");
+
+    const whatsappMessage =
+      `Hello Construction C-O-N-E-L-E Limited.%0A%0A` +
+      `Name: ${encodeURIComponent(name)}%0A` +
+      `Phone: ${encodeURIComponent(phone)}%0A` +
+      `Project: ${encodeURIComponent(type)}%0A` +
+      `Message: ${encodeURIComponent(message)}`;
+
+    window.open(
+      "https://wa.me/2348033475529?text=" +
+      whatsappMessage,
+      "_blank"
+    );
+
+    this.reset();
+
+  }else{
+
+    toast(
+      result.error ||
+      "Could not submit enquiry."
+    );
+  }
+
+});
+
+
+/* =========================================================
+ CHATBOT
+========================================================= */
+
+function botReply(message){
+
+  const text =
+    message.toLowerCase();
+
+  if(
+    text.includes("price") ||
+    text.includes("cost") ||
+    text.includes("how much")
+  ){
+
+    return "Project costs depend on the type, size, location and specifications of the project. Send your project details and the team can discuss the requirements with you.";
+
+  }
+
+  if(
+    text.includes("service") ||
+    text.includes("do you")
+  ){
+
+    return "Construction C-O-N-E-L-E Limited provides building construction, property development, renovation, residential and commercial project solutions.";
+
+  }
+
+  if(
+    text.includes("location") ||
+    text.includes("where")
+  ){
+
+    return "Construction C-O-N-E-L-E Limited is based in Uyo, Akwa Ibom, Nigeria.";
+
+  }
+
+  if(
+    text.includes("contact") ||
+    text.includes("phone") ||
+    text.includes("whatsapp")
+  ){
+
+    return "You can contact the company on WhatsApp or phone at 0803 347 5529.";
+
+  }
+
+  if(
+    text.includes("project") ||
+    text.includes("build") ||
+    text.includes("construction")
+  ){
+
+    return "Absolutely. You can tell us what you're planning, the type of property, location and what stage the project is at. You can also send an enquiry through the Contact section.";
+
+  }
+
+  if(
+    text.includes("hello") ||
+    text.includes("hi") ||
+    text.includes("hey")
+  ){
+
+    return "Hello! How can Construction C-O-N-E-L-E Limited help you today?";
+
+  }
+
+  return "Thanks for your message. I can help with information about our construction services, projects, location and contacting the company. You can also send your project details through the enquiry form.";
+}
+
+
+async function sendChat(){
+
+  const input =
+    document.getElementById("chatInput");
+
+  const message =
+    input.value.trim();
+
+  if(!message) return;
+
+  addChatMessage(
+    message,
+    "user"
+  );
+
+  input.value="";
+
+  const response =
+    botReply(message);
+
+  addChatMessage(
+    response,
+    "bot"
+  );
+
+  await apiPost({
+    action:"saveChat",
+    session:chatSession,
+    visitor:"Website Visitor",
+    message:message,
+    response:response
+  });
+}
+
+
+function addChatMessage(text,type){
+
+  const box =
+    document.getElementById("chatMessages");
+
+  const div =
+    document.createElement("div");
+
+  div.className =
+    "msg " +
+    type;
+
+  div.textContent =
+    text;
+
+  box.appendChild(div);
+
+  box.scrollTop =
+    box.scrollHeight;
+}
+
+
+/* =========================================================
+ VISITOR TRACKING
+========================================================= */
+
+async function trackVisit(){
+
+  await apiPost({
+    action:"trackVisit",
+    page:location.pathname
+  });
+}
+
+
+/* =========================================================
+ ADMIN LOGIN
+========================================================= */
+
+function openAdmin(){
+
+  document.getElementById("mainSite")
+    .style.display="none";
+
+  document.getElementById("adminLogin")
+    .classList.remove("hidden");
+
+  document.getElementById("adminPage")
+    .classList.remove("active");
+}
+
+
+function exitAdmin(){
+
+  location.hash="";
+  location.reload();
+}
+
+
+async function adminLogin(){
+
+  const password =
+    document.getElementById("adminPassword").value;
+
+  if(!password){
+
+    toast("Enter the password.");
+    return;
+  }
+
+  if(
+    GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")
+  ){
+
+    if(password === DEMO_ADMIN_PASSWORD){
+
+      showAdmin();
+
+    }else{
+
+      toast("Incorrect password.");
+    }
+
+    return;
+  }
+
+  const result =
+    await apiPost({
+      action:"login",
+      password:password
+    });
+
+  if(result.success){
+
+    showAdmin();
+
+  }else{
+
+    toast(
+      result.error ||
+      "Incorrect password."
+    );
+  }
+}
+
+
+function showAdmin(){
+
+  document.getElementById("mainSite")
+    .style.display="none";
+
+  document.getElementById("adminLogin")
+    .classList.add("hidden");
+
+  document.getElementById("adminPage")
+    .classList.add("active");
+
+  loadAdminData();
+}
+
+
+/* =========================================================
+ ADMIN DATA
+========================================================= */
+
+async function loadAdminData(){
+
+  await Promise.all([
+    loadWebsite(),
+    loadMedia(),
+    loadProjects()
+  ]);
+
+  const result =
+    await apiGet("getAdminData");
+
+  if(!result.success) return;
+
+  adminData =
+    result.data || {};
+
+  document.getElementById("statVisits").textContent =
+    adminData.visits || 0;
+
+  document.getElementById("statLeads").textContent =
+    adminData.leads
+    ? adminData.leads.length
+    : 0;
+
+  document.getElementById("statChats").textContent =
+    adminData.chats
+    ? adminData.chats.length
+    : 0;
+
+  document.getElementById("statImages").textContent =
+    adminData.media
+    ? adminData.media.length
+    : mediaData.length;
+
+  renderLeads();
+  renderChats();
+}
+
+
+function renderLeads(){
+
+  const tbody =
+    document.getElementById("leadsTable");
+
+  const leads =
+    adminData.leads || [];
+
+  if(!leads.length){
+
+    tbody.innerHTML =
+      `<tr><td colspan="6">No leads yet.</td></tr>`;
+
+    return;
+  }
+
+  tbody.innerHTML =
+    leads.map(lead=>`
+
+      <tr>
+
+        <td>${escapeHtml(lead.date)}</td>
+
+        <td>${escapeHtml(lead.name)}</td>
+
+        <td>${escapeHtml(lead.phone)}</td>
+
+        <td>${escapeHtml(lead.email)}</td>
+
+        <td>${escapeHtml(lead.project)}</td>
+
+        <td>${escapeHtml(lead.message)}</td>
+
+      </tr>
+
+    `).join("");
+}
+
+
+function renderChats(){
+
+  const tbody =
+    document.getElementById("chatsTable");
+
+  const chats =
+    adminData.chats || [];
+
+  if(!chats.length){
+
+    tbody.innerHTML =
+      `<tr><td colspan="4">No chatbot conversations yet.</td></tr>`;
+
+    return;
+  }
+
+  tbody.innerHTML =
+    chats.map(chat=>`
+
+      <tr>
+
+        <td>${escapeHtml(chat.date)}</td>
+
+        <td>${escapeHtml(chat.visitor)}</td>
+
+        <td>${escapeHtml(chat.message)}</td>
+
+        <td>${escapeHtml(chat.response)}</td>
+
+      </tr>
+
+    `).join("");
+}
+
+
+/* =========================================================
+ WEBSITE CONTENT
+========================================================= */
+
+async function saveWebsiteContent(){
+
+  const heroText =
+    document.getElementById("editHero").value.trim();
+
+  const aboutText =
+    document.getElementById("editAbout").value.trim();
+
+  const result =
+    await apiPost({
+      action:"saveContent",
+      heroText:heroText,
+      aboutText:aboutText
+    });
+
+  if(result.success){
+
+    toast("Website content updated.");
+
+    await loadWebsite();
+
+  }else{
+
+    toast(
+      result.error ||
+      "Could not save content."
+    );
+  }
+}
+
+
+/* =========================================================
+ ADMIN TABS
+========================================================= */
+
+function adminTab(name,button){
+
+  document
+    .querySelectorAll(".adminPanel")
+    .forEach(panel=>{
+      panel.classList.remove("active");
+    });
+
+  document
+    .getElementById("panel-"+name)
+    .classList.add("active");
+
+  document
+    .querySelectorAll(".adminNav button")
+    .forEach(btn=>{
+      btn.classList.remove("active");
+    });
+
+  if(button){
+    button.classList.add("active");
+  }
+
+  if(name === "leads" || name === "chatsAdmin"){
+    loadAdminData();
+  }
+}
+
+
+function adminTabByName(name){
+
+  const buttons =
+    document.querySelectorAll(".adminNav button");
+
+  buttons.forEach(button=>{
+
+    if(
+      button.textContent
+        .toLowerCase()
+        .includes(
+          name === "media"
+          ? "images"
+          : name === "projectsAdmin"
+          ? "projects"
+          : name
+        )
+    ){
+
+      adminTab(name,button);
+    }
+
+  });
+}
+
+
+/* =========================================================
+ HASH ADMIN ACCESS
+========================================================= */
+
+function checkHash(){
+
+  if(location.hash === "#admin"){
+
+    openAdmin();
+
+  }else{
+
+    document.getElementById("mainSite")
+      .style.display="block";
+
+    document.getElementById("adminLogin")
+      .classList.add("hidden");
+
+    document.getElementById("adminPage")
+      .classList.remove("active");
+  }
+}
+
+
+/* =========================================================
+ START
+========================================================= */
+
+window.addEventListener("hashchange",checkHash);
+
+checkHash();
+
+loadWebsite();
+loadMedia();
+loadProjects();
+trackVisit();
+
+</script>
+
+</body>
+          </html>
